@@ -5,6 +5,7 @@ import { LandingPage } from './pages/Landing';
 import { AboutPage } from './pages/About';
 import { PricingPage } from './pages/Pricing';
 import { AuthPage } from './pages/Auth';
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
   // You can manage authentication globally if needed
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </Router>
+      <Analytics />
     </div>
   );
 };
